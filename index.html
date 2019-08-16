@@ -1,0 +1,210 @@
+<!-- <!doctype html>
+<html>
+<head>
+    <title>Cesium</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        table, p {
+            margin-left: 25px;
+        }
+
+        td {
+            padding-bottom: 15px;
+            vertical-align: top;
+        }
+
+        td:first-child {
+            padding-right: 15px;
+        }
+
+        .section:nth-child(even) {
+            background-color: #fff;
+        }
+
+        .section {
+            border: none;
+            padding: 20px 40px;
+        }
+
+        .section > * {
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body style="background-color: #f5f7f9;">
+<div>
+    <div class="section">
+        <a href="https://cesiumjs.org"><img src="Apps/Sandcastle/images/Cesium_Logo_Color_Overlay.png" style='width: 400px'/></a>
+        <div style="font-weight: bold; margin: -20px 0 0 150px;">Next Dimension Mapping</div>
+    </div>
+    <div class="section">
+        <h2>Cesium ion</h2>
+        <p>
+            Cesium ion is your hub for discovering 3D content and tiling your own data for streaming. CesiumJS and ion
+            work together to enable you to build world class 3D mapping applications.
+        </p>
+        <p>
+            <a href="https://cesium.com/ion/signup/">Sign up for a free account</a> to get your access token required for using ion's Bing Maps global imagery and Cesium World Terrain assets.
+        </p>
+    </div>
+    <div class="section">
+        <h2>Local links</h2>
+        <table>
+            <tbody>
+            <tr>
+                <td><a href="Build/Documentation/index.html">Documentation</a></td>
+                <td>The complete API documentation and reference.</td>
+            </tr>
+            <tr>
+                <td><a href="Apps/HelloWorld.html">Hello World</a></td>
+                <td>The simplest possible Cesium application.</td>
+            </tr>
+            <tr>
+                <td><a href="Apps/CesiumViewer/index.html">Cesium Viewer</a></td>
+                <td>A sample Cesium reference application which allows you to browse the globe and select from a variety
+                    of imagery and terrain layers as well as load CZML, GeoJSON, and other formats supported by Cesium.
+                </td>
+            </tr>
+            <tr>
+                <td><a href="Apps/Sandcastle/index.html">Sandcastle</a></td>
+                <td>Cesium's live code editor and example gallery. Browse examples highlighting features of the Cesium
+                    API and edit and run them all in your web browser. Cesium applications created in Sandcastle can be
+                    saved and downloaded.
+                </td>
+            </tr>
+            <tr>
+                <td><a href="Specs/SpecRunner.html">Run tests</a></td>
+                <td>Run Cesium's full suite of unit tests</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="section">
+        <h2>External links</h2>
+        <table>
+            <tbody>
+            <tr>
+                <td><a href="https://cesium.com">Cesium</a></td>
+                <td>Learn about the Cesium team and the Cesium ion platform</td>
+            </tr>
+            <tr>
+                <td><a href="https://cesium.com/blog/">Cesium Blog</a></td>
+                <td>Follow project news, developer tips, and posts about Cesium's innovative technology</td>
+            </tr>
+            <tr>
+                <td><a href="https://cesiumjs.org/tutorials.html">Tutorials</a></td>
+                <td>Step-by-step guides for learning to use CesiumJS</td>
+            </tr>
+            <tr>
+                <td><a href="https://cesiumjs.org/forum.html">Forum</a></td>
+                <td>Questions and feedback welcome from all skill levels</td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/AnalyticalGraphicsInc/cesium">GitHub</a></td>
+                <td>The official Cesium GitHub repository</td>
+            </tr>
+            <tr>
+                <td><a href="https://cesiumjs.org/demos.html">Showcases</a></td>
+                <td>Demos and information about projects using CesiumJS</td>
+            </tr>
+            <tr>
+                <td><a href="http://webglreport.com/">WebGL Report</a></td>
+                <td>Provides technical information about WebGL capabilities supported by your browser</td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="padding-top: 300px; font-size: 10pt; vertical-align: bottom;">
+            &copy; 2011-2018 CesiumJS Contributors
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    if (window.location.protocol === 'file:') {
+        document.body.innerHTML = '';
+        document.write('<p><b>This file must be hosted in a web server.</br>');
+        document.write('See our <a href="https://cesiumjs.org/tutorials/Cesium-Workshop/#setup">Cesium Workshop</a> ');
+        document.write('tutorial for a step-by-step guide.</b></p>');
+    }
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://cesiumjs.org/releases/1.60/Build/Cesium/Cesium.js"></script>
+    <link href="https://cesiumjs.org/releases/1.60/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="cesiumContainer" style="width: 100%; height:100%"></div>
+
+    <script>
+        Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxZDAwOTQ3Mi1lZTZkLTQxY2ItOTZjNi1kNmZmNjM3ODc4NGUiLCJpZCI6MTQ1MTYsInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NjU3MjEyNDZ9.XCGbIqNWOQMQgIr35lCfnJE-XqZT0JGnCnlz7qFB2bo';
+
+        // Cesium container
+        var viewer = new Cesium.Viewer('cesiumContainer');
+
+        //Set bounds of our simulation time
+        var start = Cesium.JulianDate.fromDate(new Date(2015, 2, 25, 16));
+        var stop = Cesium.JulianDate.addSeconds(start, 120, new Cesium.JulianDate());
+
+        //Make sure viewer is at the desired time.
+        viewer.clock.startTime = start.clone();
+        viewer.clock.stopTime = stop.clone();
+        viewer.clock.currentTime = start.clone();
+        viewer.clock.clockRange = Cesium.ClockRange.LOOP_STOP; //Loop at the end
+        viewer.clock.multiplier = 1;
+        viewer.clock.shouldAnimate = true;
+
+        //Set timeline to simulation bounds
+        viewer.timeline.zoomTo(start, stop);
+
+        var entityPosition = new Cesium.Cartesian3();
+        var entityOrientation = new Cesium.Quaternion();
+        var rotationMatrix = new Cesium.Matrix3();
+        var modelMatrix = new Cesium.Matrix4();
+
+        var pos1 = Cesium.Cartesian3.fromDegrees(-75.15787310614596, 39.97862668312678);
+        var pos2 = Cesium.Cartesian3.fromDegrees(-75.1633691390455, 39.95355089912078);
+        var position = new Cesium.SampledPositionProperty();
+
+        position.addSample(start, pos1);
+        position.addSample(stop, pos2);
+
+        // var position = Cesium.Cartesian3.fromDegrees(-123.0744619, 44.0503706);
+        var heading = Cesium.Math.toRadians(45.0);
+        var pitch = Cesium.Math.toRadians(15.0);
+        var roll = Cesium.Math.toRadians(0.0);
+        var orientation = Cesium.Transforms.headingPitchRollQuaternion(position, new Cesium.HeadingPitchRoll(heading, pitch, roll));
+
+        var entity = viewer.entities.add({
+          availability: new Cesium.TimeIntervalCollection([new Cesium.TimeInterval({
+            start: start,
+            stop: stop
+          })]),
+          position: position,
+          orientation:  new Cesium.VelocityOrientationProperty(position),
+          model: {
+            uri: '../../../../Apps/SampleData/models/GroundVehicle/GroundVehicle.glb'
+          }
+        });
+        viewer.trackedEntity = entity;
+
+        var scene = viewer.scene;
+    </script>
+</body>
+
+</html>
